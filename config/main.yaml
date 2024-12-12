@@ -1,0 +1,23 @@
+defaults:
+  - model: sam_vit_b
+  - optimizer: adam_w
+  - scheduler: multistep_lr
+
+memo: "first_experiment"
+task: "train"
+weight: "./weight/sam_first_experiment.pth"
+
+meta_csv: "./data/meta.csv"
+image_dir: "./data/image"
+mask_dir: "./data/mask"
+
+train_size: 0.8
+val_size: 0.1
+test_size: 0.1
+
+seed: 42
+epochs: 50
+lr: 1e-5
+batch_size: 32
+num_workers: 8
+resize: 256

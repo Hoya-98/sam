@@ -1,0 +1,7 @@
+.*
+data
+weight
+outputs
+*.pyc
+*.pth
+*.ipynb
